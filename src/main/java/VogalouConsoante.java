@@ -9,17 +9,21 @@ public class VogalouConsoante {
         System.out.println("Digite uma letra");
         String letra = scan.next();
 
-         if(letra.equalsIgnoreCase("a")
-                || letra.equalsIgnoreCase("e")
-                || letra.equalsIgnoreCase("i")
-                || letra.equalsIgnoreCase("o")
-                || letra.equalsIgnoreCase("u")){
-
-            System.out.println("É vogal");
+        if(letra.length() > 1){
+            System.out.println("Não é uma letra válida");
+        }else if (letra.equalsIgnoreCase("a")
+                    || letra.equalsIgnoreCase("e")
+                    || letra.equalsIgnoreCase("i")
+                    || letra.equalsIgnoreCase("o")
+                    || letra.equalsIgnoreCase("u")){
+                System.out.println("É vogal");
         } else {
             System.out.println("É consoante");
+            }
         }
 
 
+
+
+
     }
-}
