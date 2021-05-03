@@ -23,6 +23,9 @@ public class VetorABC {
 
     for(int i = 0; i < vetorC.length; i++){
         vetorC[i] = vetorA[i] * + vetorB[i];
+
+        //para preencher o vetor a partir da posição 10
+        vetorC[vetorA.length + 1] = vetorB[i];
     }
 
     System.out.print("Valores do Vetor A = ");
